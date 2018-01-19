@@ -1,0 +1,3 @@
+@function column-width($column-count, $column-span, $gutter) {
+  @return calc((((100% - (#{$gutter} * (#{$column-count} - 1))) / #{$column-count}) * #{$column-span}) + (#{$gutter} * (#{$column-span} - 1)));
+}
